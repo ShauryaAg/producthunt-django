@@ -35,6 +35,4 @@ def logout(request):
     if request.method == "POST":
         auth.logout(request)
         return redirect('home')
-    # TODO route to homepage
-    # logout too
-    return render(request, 'accounts/logout.html')
+    # return render(request, 'accounts/logout.html')
